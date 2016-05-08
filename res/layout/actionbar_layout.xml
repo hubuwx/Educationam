@@ -1,0 +1,11 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/ActionBarCompat" >
+ 
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="#E52847"
+        android:clickable="false"
+        android:scaleType="center" />
+ 
+</LinearLayout>

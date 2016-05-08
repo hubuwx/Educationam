@@ -1,0 +1,31 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.educationam.OurTeamActivity" >
+
+    <WebView
+        android:id="@+id/webOur"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="none" />
+
+    <ProgressBar
+        android:id="@+id/pgrShowOur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/lblSyncTextOur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/webOur"
+        android:layout_centerHorizontal="true"
+        android:text="Loading..."
+        android:textColor="#000"
+        android:visibility="gone" />
+
+</RelativeLayout>

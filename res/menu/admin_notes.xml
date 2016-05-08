@@ -1,0 +1,29 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.pravin.dboard.AdminNotesActivity" >
+
+    <item
+        android:id="@+id/action_addnote"
+        android:orderInCategory="100"
+        android:title="add notes"
+        android:icon="@drawable/ic_action_new_holo_dark"
+      android:showAsAction="always"></item>
+    
+     <item
+        android:id="@+id/action_backup"
+        android:orderInCategory="200"
+        android:title="backup"
+        
+        />
+      <item
+        android:id="@+id/action_importall"
+        android:orderInCategory="200"
+        android:title="Import"
+      />
+
+      
+    
+        
+      
+</menu>

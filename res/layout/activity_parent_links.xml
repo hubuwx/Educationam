@@ -1,0 +1,34 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.educationam.ParentLinksActivity" >
+
+    <LinearLayout
+        android:id="@+id/llParentlinks"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="#223581" >
+
+        <TextView
+            android:id="@+id/lblBackParent"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:drawableLeft="@drawable/ic_arrow_back_white"
+            android:drawablePadding="10dp"
+            android:text="Useful Links"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listParentLink"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/llParentlinks"
+         >
+    </ListView>
+
+</RelativeLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    
+    <TextView
+        android:id="@+id/back"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:background="@color/dark_blue"
+        android:drawableLeft="@drawable/ic_arrow_back_white"
+        android:gravity="center|left"
+        android:paddingLeft="10dp"
+        android:text=" Notification Hub"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/white"
+        android:visibility="visible" />
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="478dp"
+        android:layout_weight="0.88"
+        android:scrollbars="none" >
+    </ListView>
+
+    <TextView
+        android:id="@+id/lblnotificationpoweredby"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:background="@color/dark_blue"
+        android:gravity="center"
+        android:text="@string/powered"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+</LinearLayout>

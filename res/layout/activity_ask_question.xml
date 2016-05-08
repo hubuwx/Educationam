@@ -1,0 +1,133 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    
+    android:orientation="vertical"
+    tools:context="com.educationam.AskQuestionActivity" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+            
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+       android:background="@color/light_blue"
+       android:layout_margin="3dp"
+        android:orientation="vertical">
+    
+        <Spinner
+        android:id="@+id/spnfaculty"
+        android:layout_width="fill_parent"
+        android:gravity="center|left"
+        android:paddingLeft="20dp"
+        
+        android:layout_height="50dp"
+        
+        
+        
+         />
+        </LinearLayout>
+    
+
+    <EditText
+        android:id="@+id/edtquestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="center|left|top"
+        android:layout_margin="3dp"
+        android:paddingLeft="4dp"
+        android:minLines="5"
+        android:maxLines="10"
+        android:hint="Enter Question"
+        android:inputType="textMultiLine"
+        android:layout_marginTop="8dp"
+        
+         >
+
+        <requestFocus />
+    </EditText>
+
+    
+    <!-- To display picture taken -->
+
+    <ImageView
+        android:id="@+id/imgPreview"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        
+         android:visibility="gone"
+        android:layout_marginTop="15dp"/>
+
+    <!-- Videoview to preview recorded video -->
+
+    <VideoView
+        android:id="@+id/videoPreview"
+        android:layout_width="fill_parent"
+        android:layout_height="400dp"
+        android:visibility="gone" 
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:id="@+id/txtPercentage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/txt_font"
+        android:textSize="30dp" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="20dp"
+        android:layout_marginBottom="35dp" 
+        android:visibility="gone"/>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:orientation="vertical">
+        <Button
+        android:id="@+id/btncapture"
+        android:layout_width="fill_parent"
+        android:layout_margin="8dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:background="@color/btn_bg"
+        android:text="   Capture Image   " />
+        </LinearLayout>
+        
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:orientation="vertical">
+        <Button
+        android:id="@+id/btnsend"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:background="@color/btn_bg"
+        android:text="   Ask Question   " />
+        </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,39 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" >
+
+    <item
+        android:id="@+id/action_sync"
+        android:icon="@drawable/syncimg"
+        android:orderInCategory="100"
+        android:title="sync"
+        android:visible="false"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/action_profile"
+        android:icon="@drawable/i_profile_icon"
+        android:orderInCategory="100"
+        android:title="Profile"
+        android:visible="true"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/action_name"
+        android:showAsAction="never"
+        android:title=""/>
+    <item
+        android:id="@+id/action_backup"
+        android:showAsAction="never"
+        android:title="Backup"
+        android:visible="false"/>
+    <item
+        android:id="@+id/action_restore"
+        android:showAsAction="never"
+        android:title="Restore"
+        android:visible="false"/>
+    <item
+        android:id="@+id/action_logout"
+        android:icon="@drawable/logout"
+        android:showAsAction="never"
+        android:title="Logout"/>
+
+</menu>

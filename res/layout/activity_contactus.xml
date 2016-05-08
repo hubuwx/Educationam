@@ -1,0 +1,33 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.educationam.ContactusActivity" >
+
+  <WebView
+        android:id="@+id/webContactus"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" 
+        android:scrollbars="none"
+        android:visibility="gone"
+        />
+
+    <ProgressBar
+        android:id="@+id/pgrShowContactus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+         />
+
+    <TextView
+        android:id="@+id/lblSyncTextContactus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/webAboutus"
+        android:layout_centerHorizontal="true"
+        android:text="Loading..."
+        android:visibility="gone"
+        android:textColor="#000" 
+        />
+</RelativeLayout>

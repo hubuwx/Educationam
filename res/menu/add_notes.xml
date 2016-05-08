@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.pravin.dboard.AddNotesActivity" >
+
+    <item
+        android:id="@+id/action_savenotes"
+        android:orderInCategory="100"
+        android:title="save note"
+        android:icon="@drawable/ic_action_new_holo_dark"
+       android:showAsAction="always"/>
+
+</menu>
